@@ -68,4 +68,6 @@ theme: next
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://git.coding.net/liclong/liclong.coding.me.git
+  branch: master
