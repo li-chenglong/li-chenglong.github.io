@@ -85,12 +85,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Notes">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="这里的知识点，后续章节会有详细的讲解。开启 Swift 的大门1print(&quot;Hello, world!&quot;) 在 Swift 中，这行代码就是一个完整的程序，不需要为输入输出或者字符串处理等功能导入单独的库。在全局范围编写的代码被用作程序的入口，不需要 main() 函数。也不需要在每个语句结尾处写分号。 简单值 (Simple Values)使用 let 定义常量，使用 var 定义变量。编译时">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Swift 速览">
+<meta property="og:url" content="http://yoursite.com/2017/06/23/Swift-速览/index.html">
 <meta property="og:site_name" content="Notes">
+<meta property="og:description" content="这里的知识点，后续章节会有详细的讲解。开启 Swift 的大门1print(&quot;Hello, world!&quot;) 在 Swift 中，这行代码就是一个完整的程序，不需要为输入输出或者字符串处理等功能导入单独的库。在全局范围编写的代码被用作程序的入口，不需要 main() 函数。也不需要在每个语句结尾处写分号。 简单值 (Simple Values)使用 let 定义常量，使用 var 定义变量。编译时">
+<meta property="og:updated_time" content="2017-06-23T06:58:15.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Notes">
+<meta name="twitter:title" content="Swift 速览">
+<meta name="twitter:description" content="这里的知识点，后续章节会有详细的讲解。开启 Swift 的大门1print(&quot;Hello, world!&quot;) 在 Swift 中，这行代码就是一个完整的程序，不需要为输入输出或者字符串处理等功能导入单独的库。在全局范围编写的代码被用作程序的入口，不需要 main() 函数。也不需要在每个语句结尾处写分号。 简单值 (Simple Values)使用 let 定义常量，使用 var 定义变量。编译时">
 
 
 
@@ -118,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/06/23/Swift-速览/"/>
 
 
 
 
 
-  <title> Notes </title>
+  <title> Swift 速览 | Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -149,9 +153,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -234,9 +236,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -266,10 +268,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/06/23/Swift-速览/" itemprop="url">
-                  Swift 速览
-                </a>
+                Swift 速览
               
             
           </h1>
@@ -342,9 +341,7 @@
       
 
       
-        
-          
-            <p>这里的知识点，后续章节会有详细的讲解。<br>开启 Swift 的大门<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="title">print</span><span class="params">(<span class="string">"Hello, world!"</span>)</span></span></div></pre></td></tr></table></figure></p>
+        <p>这里的知识点，后续章节会有详细的讲解。<br>开启 Swift 的大门<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="title">print</span><span class="params">(<span class="string">"Hello, world!"</span>)</span></span></div></pre></td></tr></table></figure></p>
 <p>在 Swift 中，这行代码就是一个完整的程序，不需要为输入输出或者字符串处理等功能导入单独的库。在全局范围编写的代码被用作程序的入口，不需要 main() 函数。也不需要在每个语句结尾处写分号。</p>
 <h2 id="简单值-Simple-Values"><a href="#简单值-Simple-Values" class="headerlink" title="简单值 (Simple Values)"></a>简单值 (Simple Values)</h2><p>使用 let 定义常量，使用 var 定义变量。编译时不需要知道常量的值，但是必须(只能)为它赋值一次。<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var <span class="attr">myVariable</span> = <span class="number">42</span></div><div class="line"><span class="attr">myVariable</span> = <span class="number">50</span></div><div class="line"><span class="keyword">let</span> <span class="attr">myConstant</span> = <span class="number">42</span></div></pre></td></tr></table></figure></p>
 <p>常量和变量必须与要分配给它的值有相同的类型。但是不需要总是显式的写明类型。创建常量或者变量时提供一个初始值，编译器会自动推断其类型。上面的例子中，编译器推断 myVariable 是 integer 类型。<br>如果初始值不能提供足够的信息或者没有初始值，可以在变量名称后面指明类型，用 <code>:</code> 分割<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> <span class="attr">implicitDouble</span> = <span class="number">70.0</span></div><div class="line"><span class="keyword">let</span> explicitDouble: <span class="attr">Double</span> = <span class="number">70</span></div><div class="line"><span class="keyword">let</span> explicitFloat: <span class="attr">Float</span> = <span class="number">4</span></div></pre></td></tr></table></figure></p>
@@ -414,20 +411,27 @@
 <hr>
 <p>本文是 <a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0" target="_blank" rel="external">Apple 官方 Swift 教程 The Swift Programming Language (Swift 4)</a> 的个人阅读笔记，并不是严谨的翻译文档。可能存在内容不准确或者更新不及时的情况。学习 Swift 请阅读官方教程，或官方推荐的 <a href="https://github.com/numbbbbb/the-swift-programming-language-in-chinese" target="_blank" rel="external">中文版翻译</a></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
@@ -435,166 +439,38 @@
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/06/20/关于-Swift/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Li Chenglong">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Notes">
-    </span>
-
-    
-      <header class="post-header">
-
         
-        
-          <h1 class="post-title" itemprop="name headline">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/06/20/关于-Swift/" rel="next" title="关于 Swift">
+                <i class="fa fa-chevron-left"></i> 关于 Swift
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2017/06/20/关于-Swift/" itemprop="url">
-                  关于 Swift
-                </a>
-              
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-20T14:04:18+08:00">
-                2017-06-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/The-Swift-Programming-Language-笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">The Swift Programming Language 笔记</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Swift 代码可以运行在手机、电脑、服务器或其他任何能够运行代码的设备上。不论是编写 ”Hello, world!” 或者完整的操作系统，安全且快速的 Swift 都是编程的绝佳选择。<br>Swift 将强大的类型推断、模式匹配与现代且轻量的语法相结合，不仅代码编写简单，阅读和维护同样简单。<br>使用 playground 编写 Swift 代码，验证代码的同时，可以立即看到结果，不需要 build 和运行一个 app。<br>Swift 已经产生了多年，并仍在不断地发展。</p>
-<hr>
-<p>本文是 <a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097-CH3-ID0" target="_blank" rel="external">Apple 官方 Swift 教程 The Swift Programming Language (Swift 4)</a> 的个人阅读笔记，并不是严谨的翻译文档。可能存在内容不准确或者更新不及时的情况。学习 Swift 请阅读官方教程，或官方推荐的 <a href="https://github.com/numbbbbb/the-swift-programming-language-in-chinese" target="_blank" rel="external">中文版翻译</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -602,6 +478,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -800,6 +680,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
