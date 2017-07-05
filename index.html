@@ -268,7 +268,7 @@
               
                 
                 <a class="post-title-link" href="/2017/06/30/基本运算符/" itemprop="url">
-                  未命名
+                  基本运算符
                 </a>
               
             
@@ -294,6 +294,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/The-Swift-Programming-Language-笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">The Swift Programming Language 笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -322,9 +344,7 @@
       
         
           
-            <p>title: 基本运算符<br>categories: The Swift Programming Language 笔记</p>
-<hr>
-<p>Swift 支持大部分标准 C 语言的运算符。也改进了几个功能来避免常见的编码错误。比如赋值运算符 (<code>=</code>) 不返回值，避免在应该使用相等运算符 (<code>==</code>) 的地方错误的使用了赋值运算符。算术运算符 (<code>+,-,*,/,%</code>等) 检测并禁止值溢出，避免值大于或小于其类型所允许的范围时出现意外的结果。可以使用 Swift 的溢出运算符处理值溢出。<br>Swift 还提供 C 语言中没有的范围运算符。比如 <code>a..&lt;b</code> 和 <code>a...b</code> 。<br>本章只介绍 Swift 中常见的运算符。<a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AdvancedOperators.html#//apple_ref/doc/uid/TP40014097-CH27-ID28" target="_blank" rel="external">高级预算符</a>一节介绍 Swift 高级运算符、自定义运算符和为自定义类型实现运算符重载。</p>
+            <p>Swift 支持大部分标准 C 语言的运算符。也改进了几个功能来避免常见的编码错误。比如赋值运算符 (<code>=</code>) 不返回值，避免在应该使用相等运算符 (<code>==</code>) 的地方错误的使用了赋值运算符。算术运算符 (<code>+,-,*,/,%</code>等) 检测并禁止值溢出，避免值大于或小于其类型所允许的范围时出现意外的结果。可以使用 Swift 的溢出运算符处理值溢出。<br>Swift 还提供 C 语言中没有的范围运算符。比如 <code>a..&lt;b</code> 和 <code>a...b</code> 。<br>本章只介绍 Swift 中常见的运算符。<a href="https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AdvancedOperators.html#//apple_ref/doc/uid/TP40014097-CH27-ID28" target="_blank" rel="external">高级预算符</a>一节介绍 Swift 高级运算符、自定义运算符和为自定义类型实现运算符重载。</p>
 <p><strong>术语</strong><br>根据操作对象的数量，运算符分一元运算符、二元运算符、三元运算符。<br>一元运算符又分前置一元运算符 (比如 <code>-a</code>) ，和后置一元运算符 (比如 <code>c!</code>) 。<br>二元运算符中置，因为出现在两个操作对象中间。<br>三元运算符只有一个，三元条件运算符 (<code>a ? b : c</code>)。</p>
 <p>操作对象称为操作数。表达式  <code>1 + 2</code> 中，<code>+</code> 是二元运算符，两个操作数分别是 <code>1</code> 和 <code>2</code> 。</p>
 <p><strong>赋值运算符 (=)</strong><br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">let <span class="selector-tag">b</span> = <span class="number">10</span></div><div class="line"><span class="selector-tag">var</span> <span class="selector-tag">a</span> = <span class="number">5</span></div><div class="line"><span class="selector-tag">a</span> = <span class="selector-tag">b</span></div><div class="line">let (x, y) = (<span class="number">1</span>, <span class="number">2</span>)</div></pre></td></tr></table></figure></p>
