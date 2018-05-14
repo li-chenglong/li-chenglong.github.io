@@ -135,7 +135,7 @@ font:
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
 social:
   #LinkLabel: Link
-  邮箱: mailto:ios@lichenglong.me
+  # 邮箱: mailto:ios@lichenglong.me
 
 
 # Social Links Icons
